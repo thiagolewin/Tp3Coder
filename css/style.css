@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    
+}
+
+body {
+    background-color: black;
+
+}
+main {
+    height: 90vh;
+}
+#index__main {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.index__nikkers {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.index__nikkers h1,.index__nikkers h2{
+    box-sizing: content-box;
+    color: white;
+    font-family: sans-serif;
+    font-style: normal;
+font-weight: 800;
+font-size: 15em;
+letter-spacing: 0.3em;
+position: absolute;
+top: 40%;
+margin-left: auto;
+}
+.index__nikkers h1 {
+    z-index: -1;
+}
+.index__nikkers h2 {
+    
+    -webkit-text-stroke: 8px white;
+    color: transparent; 
+}
+.index__nikkers img {
+    animation: saltar 6s infinite ease-in-out;
+    margin-left: 5vw;
+    height: 70vh;
+    width: auto;
+}
+@keyframes saltar {
+    25% {
+        transform: translateY(-2vh);
+    }
+   
+    75% {
+        transform: translateY(2vh);
+    }
+}
+header {   
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+header ul{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+header ul li:first-child {
+    margin-left: 1vw;
+}
+header ul li:first-child img {
+    width: 100%;
+    transition: transform 0.5s;
+}
+header ul li:nth-child(2) {
+    margin-left: 54vw;
+    width: 30vw;
+    border-radius: 20px 0px 0px 20px;
+}
+header ul .texto {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+header ul .texto a {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    font-weight: 800;
+    color: #F19100;
+    font-size: 2.5em;
+    transition: transform 0.5s;
+}
+header ul a:hover img,header ul a:hover {
+    transform: translateY(-2vh);
+    color: #A96806;
+}
+.ham {
+    display: none;
+}
+.texto-mobile {
+    display: none;
+}
+
+/* AirForce */
+#airforce__main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90vh;
+}
+#airforce__main img {
+    justify-self: center;
+    align-self: center;
+    width: 70%;
+}
+#airforce__main .airforce__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#airforce__main .airforce__description h1, .airforce__h2mobile {
+    letter-spacing: 0.3em;
+    margin-top: 10vh;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 8em;
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+}
+#airforce__main .airforce__description ul {
+    margin-top: 5vh;
+    letter-spacing: 0.1em;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    justify-content: center;
+    color: white;
+    font-size: 3em;
+}
+.airforce__h2mobile {
+    display:none;
+}
+.footerDescp {
+    margin-top: 10vh;
+    width: 30vw;
+    height: 50px;
+    background-color: #0b2e0b;
+    border-radius: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.footerDescp a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    color: black;
+    transition: transform 0.5s;
+}
+.footerDescp a:hover {
+    color: #105310;
+}
+
+    /* Tienda */
+    #tienda__body {
+        background-color: white;
+    }
+    .tienda__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tienda__main h1 {
+        font-size: 6em;
+        font-family: 'Poppins', sans-serif;
+    }
+    .tienda_main_articulos {
+        margin-top: 10vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 80vw;
+    }
+    .tienda_main_articulos div {
+        margin-left: 1vw;
+        margin-right: 1vw;
+        margin-bottom: 10vh;
+        flex-basis: 350px;
+        height: 30vh;
+        width: 25vw;
+        border-radius: 40px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .tienda_main_articulos div h2 {
+        margin-top: 5%;
+        display: block;
+        font-size: 3em;
+        letter-spacing: 0.1em;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+    }
+    .tienda_main_articulos div h3 {
+        margin-top: 20%;
+        display: block;
+        font-size: 3em;
+        letter-spacing: 0.1em;
+        font-family: 'Poppins', sans-serif;
+        color: #04C500;
+    }
+    .tienda_main_articulos div img {
+        margin-top: 5%;
+        width: auto;
+        height: 30%;
+    }
+
+@media (max-width: 1110px) {
+    html {
+        font-size: 52.5%;
+    }
+    .index__nikkers img {
+        margin-left: 5vw;
+        height: 55vh;
+        width: auto;
+    }
+}
+@media (max-width: 936px) {
+    html {
+        font-size: 42.5%;
+    }
+    .index__nikkers img {
+        margin-left: 5vw;
+        height: 55vh;
+        width: auto;
+    }
+    #airforce__main .airforce__description h1 {
+        margin-top: 26vh;
+    }
+}
+@media (max-width: 769px) {
+    html {
+        font-size: 32.5%;
+    }
+    .index__nikkers img {
+        margin-left: 5vw;
+        height: 45vh;
+        width: auto;
+    }
+    #airforce__main .airforce__description h1 {
+        margin-top: 25vh;
+    }
+}
+@media (max-width: 689px) {
+    html {
+        font-size: 32.5%;
+    }
+    .index__nikkers {
+        height: 100%;
+    }
+    .index__nikkers img {
+        margin-top: 15vh;
+        margin-left: 5vw;
+        height: 45vh;
+        width: auto;
+    }
+    .index__nikkers h1,.index__nikkers h2{
+        box-sizing: content-box;
+        color: white;
+        font-family: sans-serif;
+        font-style: normal;
+    font-weight: 800;
+    font-size: 15em;
+    letter-spacing: 0.3em;
+    position: absolute;
+    top: 10%;
+    margin-left: auto;
+    }
+    header {
+        height: auto;
+    }
+    header ul{
+        overflow: hidden;
+        display: flex;
+        align-items: flex-start;
+        padding-top: 4vh;
+    }
+    header ul li:first-child {
+        width: 15vw;
+        margin-left: 1vw;
+    }
+    header ul li:first-child img {
+        height: auto;
+        width: 100%;
+    }
+    header ul .texto {
+        display: none;
+    }
+    main {
+        height: 66vh;
+    }
+    .list2 {
+        transform: translateX(138px);
+        position: relative;
+        width: 900px;
+        background-color: black;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .activo {
+        height: 30vh;
+        margin-left: 60vw;
+        transform: translateX(0px) !important;
+        background-color: #F19100;
+    }
+    
+    .ham {
+        margin-left: 2vw;
+        top: 0;
+        left: 0;
+        position: absolute;
+        font-weight: 800;
+        color: #F19100;
+        font-size: 7em;
+        letter-spacing: 0.05em;
+        transform: rotate(90deg);
+        display: inline-block;
+    }
+    .ham-active {
+        color: black;
+    }
+    header ul .ham:hover {
+        cursor: pointer;
+    }
+    .texto-mobile-activo {
+        letter-spacing: 0.1em;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        font-size: 5em;
+        justify-content: space-evenly;
+        margin-left: 8vw;
+        
+    }
+    .texto-mobile-activo a {
+        
+        color: black;
+        transition: transform 0.5s;
+    }
+    main {
+        margin-top:  10vh;
+    }
+    #airforce__main {
+        display: flex;
+        flex-direction: column;
+    }
+    .airforce__h2mobile {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 15vh;
+    }
+    .none {
+        display: none;
+    }
+    #airforce__main .airforce__description ul {
+        margin-top: 5vh;
+        letter-spacing: 0.1em;
+        font-family: 'Poppins', sans-serif;
+        list-style:disc;
+        justify-content: center;
+        color: white;
+        font-size: 5em;
+    }
+}
+@media (max-width: 769px) {
+    html {
+        font-size: 32.5%;
+    }
+    .index__nikkers img {
+        margin-left: 5vw;
+        height: 45vh;
+        width: auto;
+    }
+    #airforce__main .airforce__description h1 {
+        margin-top: 25vh;
+    }
+}
+@media (max-width: 689px) {
+    html {
+        font-size: 32.5%;
+    }
+    .index__nikkers {
+        height: 100%;
+    }
+    .index__nikkers img {
+        margin-top: 15vh;
+        margin-left: 5vw;
+        height: 45vh;
+        width: auto;
+    }
+    .index__nikkers h1,.index__nikkers h2{
+        box-sizing: content-box;
+        color: white;
+        font-family: sans-serif;
+        font-style: normal;
+    font-weight: 800;
+    font-size: 15em;
+    letter-spacing: 0.3em;
+    position: absolute;
+    top: 10%;
+    margin-left: auto;
+    }
+    header {
+        height: auto;
+    }
+    header ul{
+        overflow: hidden;
+        display: flex;
+        align-items: flex-start;
+        padding-top: 4vh;
+    }
+    header ul li:first-child {
+        width: 15vw;
+        margin-left: 1vw;
+    }
+    header ul li:first-child img {
+        height: auto;
+        width: 100%;
+    }
+    header ul .texto {
+        display: none;
+    }
+    main {
+        height: 66vh;
+    }
+    .list2 {
+        transform: translateX(138px);
+        position: relative;
+        width: 900px;
+        background-color: black;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .activo {
+        height: 30vh;
+        margin-left: 60vw;
+        transform: translateX(0px) !important;
+        background-color: #F19100;
+    }
+    
+    .ham {
+        margin-left: 2vw;
+        top: 0;
+        left: 0;
+        position: absolute;
+        font-weight: 800;
+        color: #F19100;
+        font-size: 7em;
+        letter-spacing: 0.05em;
+        transform: rotate(90deg);
+        display: inline-block;
+    }
+    .ham-active {
+        color: black;
+    }
+    header ul .ham:hover {
+        cursor: pointer;
+    }
+    .texto-mobile-activo {
+        letter-spacing: 0.1em;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-direction: column;
+        font-size: 5em;
+        justify-content: space-evenly;
+        margin-left: 8vw;
+        
+    }
+    .texto-mobile-activo a {
+        
+        color: black;
+        transition: transform 0.5s;
+    }
+    main {
+        margin-top:  10vh;
+    }
+    #airforce__main {
+        display: flex;
+        flex-direction: column;
+    }
+    .airforce__h2mobile {
+        display: block;
+        margin-top: 0;
+        margin-bottom: 15vh;
+    }
+    .none {
+        display: none;
+    }
+    #airforce__main .airforce__description ul {
+        margin-top: 5vh;
+        letter-spacing: 0.1em;
+        font-family: 'Poppins', sans-serif;
+        list-style:disc;
+        justify-content: center;
+        color: white;
+        font-size: 5em;
+    }
+}
+@media (max-width: 601px) {
+    .ham {
+        margin-right: 5vw;
+        font-size: 12em;
+    }
+    header ul li:nth-child(2) {
+        margin-left: 40vw;
+        width: 46vw;
+    }
+    .texto-mobile-activo {
+        margin-left: 15vw;
+    }
+    html {
+        font-size: 22.5%;
+    }
+    .index__nikkers img {
+        margin-left: 5vw;
+        height: 45vh;
+        width: auto;
+    }
+    main {
+        margin-top:  10vh;
+    }
+    .tienda_main_articulos div h2, .tienda_main_articulos div h3 {
+        font-size: 6em;
+    }
+}
+@media (max-width: 450px) {
+    html {
+        font-size: 15.5%;
+    }
+    .index__nikkers img {
+        margin-left: 5vw;
+        height: 40vh;
+        width: auto;
+    }
+}
